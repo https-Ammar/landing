@@ -308,6 +308,19 @@ div#wrap {
 .block h1 {
     font-size: x-large !important;
 }
+
+
+div#wrap {
+    display: flex !IMPORTANT;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 

@@ -321,6 +321,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+div#leftPanel {
+    padding: 0;
+}
 }
 
 
@@ -360,3 +363,5 @@ h1#headline {
 button.answer-btn {
     text-align: center;
 }
+
+

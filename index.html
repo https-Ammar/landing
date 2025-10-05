@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick 3-Step Quiz — Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="wrap" id="wrap">
+    <div class="left" id="leftPanel">
+      <div class="logo" id="logo">
+        <div class="logo-badge" id="logoBadge"></div>
+        <div>
+          <div style="font-size:13px;color:var(--muted)">Interactive Landing</div>
+          <div style="font-size:14px;letter-spacing:.3px">3-step engagement funnel</div>
+        </div>
+      </div>
+      <h1 id="headline">Three quick questions. One click to your next step.</h1>
+      <p class="lead phone" id="subhead">Answer three short questions and we'll guide you to the next page. Fast, friendly, and designed to convert. Select an answer, and the next question will appear automatically.</p>
+      <div class="progress-wrap" aria-hidden="false">
+        <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text" id="progressText">0%</div>
+      </div>
+      <div style="height:18px"></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap" class="phone">
+        <button class="skip" id="restartBtn" type="button">Restart</button>
+        <div style="flex:1"></div>
+        <button class="skip" id="helpBtn" type="button" aria-haspopup="dialog">Need help?</button>
+      </div>
+    </div>
+
+    <div class="right" id="rightPanel">
+      <div class="pulse" aria-hidden="true"></div>
+      <div class="card" id="card">
+        <div id="qContainer">
+          <div class="question q-visible" id="q1" data-index="1" role="region" aria-labelledby="q1txt">
+            <div class="q-head">
+              <div class="q-index" id="q1index">Question 1</div>
+              <div style="width:8px"></div>
+            </div>
+            <div class="q-text" id="q1txt">What is your main goal today?</div>
+            <div class="answers" role="list" aria-labelledby="q1txt">
+              <button class="answer-btn" data-next="q2" type="button">Learn something new</button>
+              <button class="answer-btn" data-next="q2" type="button">Acquire a product</button>
+              <button class="answer-btn" data-next="q2" type="button">Explore offers</button>
+            </div>
+          </div>
+
+          <div class="question q-hidden" id="q2" data-index="2" role="region" aria-labelledby="q2txt">
+            <div class="q-head">
+              <div class="q-index" id="q2index">Question 2</div>
+            </div>
+            <div class="q-text" id="q2txt">What type of content do you prefer?</div>
+            <div class="answers" role="list" aria-labelledby="q2txt">
+              <button class="answer-btn" data-next="q3" type="button">Short articles</button>
+              <button class="answer-btn" data-next="q3" type="button">Quick videos</button>
+              <button class="answer-btn" data-next="q3" type="button">In-depth courses</button>
+            </div>
+          </div>
+
+          <div class="question q-hidden" id="q3" data-index="3" role="region" aria-labelledby="q3txt">
+            <div class="q-head">
+              <div class="q-index" id="q3index">Question 3</div>
+            </div>
+            <div class="q-text" id="q3txt">Would you like to proceed now?</div>
+            <div class="answers" role="list" aria-labelledby="q3txt">
+              <button class="answer-btn" data-next="finish" type="button">Yes, take me there now</button>
+              <button class="answer-btn" data-next="finish" type="button">Not right now</button>
+              <button class="answer-btn" data-next="finish" type="button">I want more information</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="small" id="note">Every answer gets you one step closer. You will be redirected after the last question.</div>
+        <div class="footer phone" id="footer">
+          <div id="brand" style="font-weight:700">YourBrand</div>
+          <div style="width:8px"></div>
+          <div style="color:var(--muted)">• Interactive Funnel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

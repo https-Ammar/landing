@@ -49,10 +49,16 @@ height:100%;
   flex-direction:column;
   justify-content:center;
   gap:20px;
+  position: relative;
 }
 @media (max-width:980px){
   .left{padding: var(--mobile-padding); order: 2; gap: 16px;}
 }
+
+.block{
+  display: none ;
+}
+
 .logo{
   display:flex;
   gap:12px;
@@ -130,7 +136,7 @@ p.lead{
 .card{
   width:100%;
   max-width:420px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+
   border-radius:14px;
   padding:26px;
   box-shadow:0 10px 30px rgba(2,6,23,0.6);
@@ -257,4 +263,57 @@ p.lead{
 .phone{
   display:none !important;}
 
+  .progress-wrap {
+    display: none;
+}
+.progress-wrap {
+    display: none;
+}
+
+div#logoBadge {
+    width: 125px;
+}
+
+.q-text {
+    font-size: x-large;
+}
+
+button.answer-btn {
+    font-size: larger;
+}
+
+.right{
+  background: none;
+}
+
+div#wrap {
+    justify-content: space-around;
+}
+.wrap{
+  display: block !important;
+}
+.block{
+  display: block !important;
+}
+}
+
+
+#headline {
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  animation: ticker 10s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
 }
